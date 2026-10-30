@@ -5,48 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Open in SOKA</title>
   <meta name="description" content="Open this SOKA invite in the app.">
-  <style>
-    :root {
-      --bg: #F4F6FA; --surface: #FFFFFF; --text: #151A2D; --muted: #4A5372;
-      --border: #E2E6EF; --accent: #123BCE; --on-accent: #FFFFFF;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0B1026; --surface: #171D32; --text: #F4F6FA; --muted: #AAB4D0;
-        --border: #293149; --accent: #E6FF00; --on-accent: #0B1026;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin: 32px 0 8px; }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); margin: 0 0 24px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px;
-      border-radius: 12px; background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-    }
-    .button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    a { color: inherit; }
-    .muted { color: var(--muted); font-size: 14px; }
-    code { font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#070712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Teko:wght@600;700&display=swap">
+  <!-- GitHub Pages serves this page for ANY unknown path (e.g. /soka-web/join/ABC123), so every URL
+       here is site-root absolute (/soka-web/...); relative URLs would break at deeper paths. -->
+  <link rel="stylesheet" href="/soka-web/theme.css">
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1 id="title">Page not found</h1>
-    <p class="lead" id="lead">This page doesn't exist. Go to the <a href="/soka-web/">SOKA home page</a>.</p>
-    <div id="invite" hidden>
-      <p><a class="button" id="open" href="#">Open in SOKA</a></p>
-      <p class="muted">Don't have the app yet? Install SOKA from Google Play, then open this link again or type the code in <strong>Join with a code</strong>.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="/soka-web/" aria-label="SOKA home">SOKA</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap lost">
+    <div class="card card--angled">
+      <span class="badge badge--danger" id="badge" aria-hidden="true"><span>Out of Bounds</span></span>
+      <p class="scoreboard" id="scoreboard" aria-hidden="true">404</p>
+      <h1 id="title">Page not found</h1>
+      <p class="lead" id="lead">This page doesn't exist. Go to the <a href="/soka-web/">SOKA home page</a>.</p>
+      <p id="home"><a class="btn" href="/soka-web/"><span>Return to SOKA Home</span></a></p>
+      <div id="invite" hidden>
+        <p><a class="btn" id="open" href="#"><span>Open in SOKA</span></a></p>
+        <p class="muted">Don't have the app yet? Install SOKA from Google Play, then open this link again or type the code in <strong>Join with a code</strong>.</p>
+      </div>
     </div>
     <script>
       (function () {
@@ -57,12 +43,29 @@
         document.title = 'Join a SOKA tournament';
         document.getElementById('title').textContent = 'Join with code ' + code;
         document.getElementById('lead').textContent = 'You have been invited to a SOKA tournament.';
+        document.getElementById('badge').firstElementChild.textContent = 'Invite';
+        document.getElementById('badge').className = 'badge';
+        document.getElementById('scoreboard').textContent = code;
+        document.getElementById('home').hidden = true;
         document.getElementById('open').href = url;
         document.getElementById('invite').hidden = false;
         location.href = url;
       })();
     </script>
-    <p class="muted" style="margin-top:40px"><a href="/soka-web/">SOKA</a> · <a href="/soka-web/privacy">Privacy</a> · <a href="/soka-web/terms">Terms</a> · <a href="/soka-web/account-deletion">Delete account</a> · <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="/soka-web/">SOKA</a></li>
+          <li><a href="/soka-web/privacy.html">Privacy</a></li>
+          <li><a href="/soka-web/terms.html">Terms</a></li>
+          <li><a href="/soka-web/account-deletion.html">Delete account</a></li>
+          <li><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

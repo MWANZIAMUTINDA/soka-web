@@ -6,77 +6,83 @@
   <title>Delete your SOKA account</title>
   <meta name="description" content="How to delete your SOKA account and what happens to your data.">
   <meta name="robots" content="index, follow">
-  <style>
-    :root {
-      --bg: #F4F6FA; --surface: #FFFFFF; --text: #151A2D; --muted: #4A5372;
-      --border: #E2E6EF; --accent: #123BCE; --on-accent: #FFFFFF;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0B1026; --surface: #171D32; --text: #F4F6FA; --muted: #AAB4D0;
-        --border: #293149; --accent: #E6FF00; --on-accent: #0B1026;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin: 32px 0 8px; }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); margin: 0 0 24px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px;
-      border-radius: 12px; background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-    }
-    .button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    a { color: inherit; }
-    .muted { color: var(--muted); font-size: 14px; }
-    code { font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#070712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Teko:wght@600;700&display=swap">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <main>
-    <h1>Delete your SOKA account</h1>
-    <p class="lead">SOKA is a tournament app for friends who play EA SPORTS FC. You can delete your account at any time.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h2>Option 1 — in the app (fastest)</h2>
-    <div class="card">
-      <ol>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html" aria-label="SOKA home">SOKA</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <div class="page-head">
+      <span class="badge" aria-hidden="true"><span>SOKA Account Center</span></span>
+      <h1>Delete your SOKA account</h1>
+      <p class="lead">SOKA is a tournament app for friends who play EA SPORTS FC. You can delete your account at any time.</p>
+      <span class="ribbon" aria-hidden="true"></span>
+    </div>
+
+    <section class="card">
+      <h2>Option 1 — in the app (fastest)<span class="tag tag--yellow" aria-hidden="true"><span>Fastest</span></span></h2>
+      <ol class="steps">
         <li>Open SOKA and sign in.</li>
         <li>Go to <strong>Profile → Settings → Delete account</strong>.</li>
         <li>Confirm. You are signed out and your account is deleted straight away.</li>
       </ol>
-    </div>
+    </section>
 
-    <h2>Option 2 — without the app</h2>
-    <div class="card">
+    <section class="card card--cyan">
+      <h2>Option 2 — without the app</h2>
       <p>If you no longer have the app installed, email us from the address you used to sign up. We confirm the request with you and delete the account within 7 days.</p>
-      <p><a class="button" href="mailto:silvestermutinda74@gmail.com?subject=Delete%20my%20SOKA%20account&amp;body=Please%20delete%20the%20SOKA%20account%20that%20uses%20this%20email%20address.%0AUsername%20(if%20you%20remember%20it)%3A%20">Email a deletion request</a></p>
+      <p><a class="btn btn--danger" href="mailto:silvestermutinda74@gmail.com?subject=Delete%20my%20SOKA%20account&amp;body=Please%20delete%20the%20SOKA%20account%20that%20uses%20this%20email%20address.%0AUsername%20(if%20you%20remember%20it)%3A%20"><span>Email a deletion request</span></a></p>
       <p class="muted">Address: silvestermutinda74@gmail.com · Subject: “Delete my SOKA account”</p>
+    </section>
+
+    <div class="split">
+      <section class="card box-deleted">
+        <h2>What is deleted</h2>
+        <ul class="list">
+          <li>Your sign-in account and email address (removed within 24 hours of the request in the app).</li>
+          <li>Your username, display name and profile photo.</li>
+          <li>Your device push tokens, notifications and notification settings.</li>
+        </ul>
+      </section>
+
+      <section class="card box-kept">
+        <h2>What is kept, and why</h2>
+        <ul class="list">
+          <li>Results of matches you played stay in your friends’ league tables and history, shown as <strong>“Deleted player”</strong> with no link to you. Removing them would change other players’ standings.</li>
+          <li>A tamper-proof audit record of result changes, without your name or email.</li>
+        </ul>
+        <p class="muted">Backups that may still contain your data are overwritten within 7 days.</p>
+      </section>
     </div>
 
-    <h2>What is deleted</h2>
-    <ul>
-      <li>Your sign-in account and email address (removed within 24 hours of the request in the app).</li>
-      <li>Your username, display name and profile photo.</li>
-      <li>Your device push tokens, notifications and notification settings.</li>
-    </ul>
-
-    <h2>What is kept, and why</h2>
-    <ul>
-      <li>Results of matches you played stay in your friends’ league tables and history, shown as <strong>“Deleted player”</strong> with no link to you. Removing them would change other players’ standings.</li>
-      <li>A tamper-proof audit record of result changes, without your name or email.</li>
-    </ul>
-    <p class="muted">Backups that may still contain your data are overwritten within 7 days.</p>
-
-    <h2>Questions</h2>
-    <p>Email <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>.</p>
+    <section class="card">
+      <h2>Questions</h2>
+      <p>Email <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>.</p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">SOKA</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="account-deletion.html" aria-current="page">Delete account</a></li>
+          <li><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

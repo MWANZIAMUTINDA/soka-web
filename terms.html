@@ -5,78 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SOKA terms of use</title>
   <meta name="description" content="The rules for using SOKA.">
-  <style>
-    :root {
-      --bg: #F4F6FA; --surface: #FFFFFF; --text: #151A2D; --muted: #4A5372;
-      --border: #E2E6EF; --accent: #123BCE; --on-accent: #FFFFFF;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0B1026; --surface: #171D32; --text: #F4F6FA; --muted: #AAB4D0;
-        --border: #293149; --accent: #E6FF00; --on-accent: #0B1026;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin: 32px 0 8px; }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); margin: 0 0 24px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px;
-      border-radius: 12px; background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-    }
-    .button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    a { color: inherit; }
-    .muted { color: var(--muted); font-size: 14px; }
-    code { font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#070712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Teko:wght@600;700&display=swap">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1>Terms of use</h1>
-    <p class="lead">Last updated 28 October 2026. By using SOKA you agree to these terms.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html" aria-label="SOKA home">SOKA</a>
+    </div>
+  </header>
 
-    <h2>The service</h2>
-    <p>SOKA helps groups of friends organise EA SPORTS FC tournaments. SOKA is independent and not affiliated with or endorsed by Electronic Arts. The service is provided free, "as is", and may change or be interrupted.</p>
+  <main id="main" class="wrap">
+    <div class="page-head">
+      <span class="badge" aria-hidden="true"><span>SOKA App</span></span>
+      <h1>Terms of use</h1>
+      <p class="lead"><time datetime="2026-10-28">Last updated 28 October 2026.</time> By using SOKA you agree to these terms.</p>
+      <span class="ribbon" aria-hidden="true"></span>
+    </div>
 
-    <h2>Your account</h2>
-    <ul>
-      <li>You must be at least 13 years old.</li>
-      <li>Keep your password safe; you are responsible for activity on your account.</li>
-      <li>Use a username that is not offensive or pretending to be someone else.</li>
-    </ul>
+    <section class="card">
+      <h2>The service</h2>
+      <p>SOKA helps groups of friends organise EA SPORTS FC tournaments. SOKA is independent and not affiliated with or endorsed by Electronic Arts. The service is provided free, "as is", and may change or be interrupted.</p>
+    </section>
 
-    <h2>Fair play</h2>
-    <ul>
-      <li>Enter scores honestly. Results count only after the opponent confirms or an admin decides a dispute.</li>
-      <li>Tournament admins run their own leagues and their decisions on disputes are final within SOKA.</li>
-      <li>Do not abuse, harass or spam other players, or try to break or overload the service.</li>
-    </ul>
+    <section class="card card--cyan">
+      <h2>Your account</h2>
+      <ul class="list list--cyan">
+        <li>You must be at least 13 years old.</li>
+        <li>Keep your password safe; you are responsible for activity on your account.</li>
+        <li>Use a username that is not offensive or pretending to be someone else.</li>
+      </ul>
+    </section>
 
-    <h2>Match-day bill and friendly stakes</h2>
-    <ul>
-      <li>The match-day bill is a calculation to help friends share the cost of games. SOKA does not collect, hold or transfer money.</li>
-      <li>Friendly stakes are optional, off by default, and only for users who confirm they are 18 or older. They only change amounts on the match-day bill between friends. You are responsible for complying with the laws that apply to you, and for settling amounts with your friends. Do not use SOKA for commercial betting.</li>
-    </ul>
+    <section class="card">
+      <h2>Fair play</h2>
+      <ul class="list list--cyan">
+        <li>Enter scores honestly. Results count only after the opponent confirms or an admin decides a dispute.</li>
+        <li>Tournament admins run their own leagues and their decisions on disputes are final within SOKA.</li>
+        <li>Do not abuse, harass or spam other players, or try to break or overload the service.</li>
+      </ul>
+    </section>
 
-    <h2>Ending</h2>
-    <p>You can delete your account at any time. We may suspend accounts that break these terms.</p>
+    <section class="card card--cyan">
+      <h2>Match-day bill and friendly stakes</h2>
+      <ul class="list list--cyan">
+        <li>The match-day bill is a calculation to help friends share the cost of games. SOKA does not collect, hold or transfer money.</li>
+        <li>Friendly stakes are optional, off by default, and only for users who confirm they are 18 or older. They only change amounts on the match-day bill between friends. You are responsible for complying with the laws that apply to you, and for settling amounts with your friends. Do not use SOKA for commercial betting.</li>
+      </ul>
+    </section>
 
-    <h2>Liability</h2>
-    <p>To the extent the law allows, SOKA is not liable for indirect losses or for disputes between players, including about bills or stakes.</p>
+    <section class="card">
+      <h2>Ending</h2>
+      <p>You can delete your account at any time. We may suspend accounts that break these terms.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
-    <p class="muted" style="margin-top:40px"><a href="./">SOKA</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a> · <a href="account-deletion">Delete account</a> · <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
+    <section class="card card--cyan">
+      <h2>Liability</h2>
+      <p>To the extent the law allows, SOKA is not liable for indirect losses or for disputes between players, including about bills or stakes.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">SOKA</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html" aria-current="page">Terms</a></li>
+          <li><a href="account-deletion.html">Delete account</a></li>
+          <li><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

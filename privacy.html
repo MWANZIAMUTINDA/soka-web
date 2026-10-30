@@ -5,93 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SOKA privacy policy</title>
   <meta name="description" content="What data SOKA collects, why, and your choices.">
-  <style>
-    :root {
-      --bg: #F4F6FA; --surface: #FFFFFF; --text: #151A2D; --muted: #4A5372;
-      --border: #E2E6EF; --accent: #123BCE; --on-accent: #FFFFFF;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0B1026; --surface: #171D32; --text: #F4F6FA; --muted: #AAB4D0;
-        --border: #293149; --accent: #E6FF00; --on-accent: #0B1026;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin: 32px 0 8px; }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); margin: 0 0 24px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px;
-      border-radius: 12px; background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-    }
-    .button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    a { color: inherit; }
-    .muted { color: var(--muted); font-size: 14px; }
-    code { font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#070712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Teko:wght@600;700&display=swap">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1>Privacy policy</h1>
-    <p class="lead">Last updated 28 October 2026. This policy explains what the SOKA app collects, why, who processes it, and how you can delete it.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html" aria-label="SOKA home">SOKA</a>
+    </div>
+  </header>
 
-    <h2>Who we are</h2>
-    <p>SOKA is an independent app made in Kenya. Contact: <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>.</p>
+  <main id="main" class="wrap">
+    <div class="page-head">
+      <span class="badge" aria-hidden="true"><span>SOKA App</span></span>
+      <h1>Privacy policy</h1>
+      <p class="lead"><time datetime="2026-10-28">Last updated 28 October 2026.</time> This policy explains what the SOKA app collects, why, who processes it, and how you can delete it.</p>
+      <span class="ribbon" aria-hidden="true"></span>
+    </div>
 
-    <h2>What we collect</h2>
-    <div class="card"><ul>
-      <li><strong>Account:</strong> email address and password (stored only as a secure hash).</li>
-      <li><strong>Profile:</strong> username, optional display name and optional profile photo.</li>
-      <li><strong>League activity:</strong> tournaments you create or join, your role, match-day availability, fixtures, scores you enter or confirm, disputes and admin decisions, standings, statistics, XP and badges.</li>
-      <li><strong>Match-day bill and friendly stakes (optional):</strong> games you played, your share of the bill, stakes you choose to join (18+ only) and how they settled. SOKA does not take or hold payments; any money is settled between players outside the app.</li>
-      <li><strong>Notifications:</strong> a push-notification token for your device and the notification types you muted.</li>
-      <li><strong>Technical:</strong> basic logs our hosting providers keep to run the service securely (for example IP address and request times).</li>
-    </ul></div>
-    <p>We do not collect your location, contacts, or payment card details, and we do not show ads or sell your data.</p>
+    <section class="card">
+      <h2>Who we are</h2>
+      <p>SOKA is an independent app made in Kenya. Contact: <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>.</p>
+    </section>
 
-    <h2>Why we use it</h2>
-    <ul>
-      <li>To run your account and your leagues (the service you asked for).</li>
-      <li>To send the notifications you allow (match days, results to confirm, rivalries). You can mute each type in Settings or turn them off on your phone.</li>
-      <li>To keep the service secure and prevent abuse (for example limiting repeated invite-code guesses).</li>
-    </ul>
+    <section class="card card--cyan">
+      <h2>What we collect</h2>
+      <ul class="list">
+        <li><strong>Account:</strong> email address and password (stored only as a secure hash).</li>
+        <li><strong>Profile:</strong> username, optional display name and optional profile photo.</li>
+        <li><strong>League activity:</strong> tournaments you create or join, your role, match-day availability, fixtures, scores you enter or confirm, disputes and admin decisions, standings, statistics, XP and badges.</li>
+        <li><strong>Match-day bill and friendly stakes (optional):</strong> games you played, your share of the bill, stakes you choose to join (18+ only) and how they settled. SOKA does not take or hold payments; any money is settled between players outside the app.<span class="tag" aria-hidden="true"><span>18+ Only</span></span></li>
+        <li><strong>Notifications:</strong> a push-notification token for your device and the notification types you muted.</li>
+        <li><strong>Technical:</strong> basic logs our hosting providers keep to run the service securely (for example IP address and request times).</li>
+      </ul>
+      <p>We do not collect your location, contacts, or payment card details, and we do not show ads or sell your data.</p>
+    </section>
 
-    <h2>Who can see it</h2>
-    <ul>
-      <li>Members of a tournament see each other's username, display name, photo and that tournament's fixtures, results, standings, bills and stakes.</li>
-      <li>Tournament admins also see availability replies and disputes for their tournament.</li>
-      <li>Service providers that process data for us: <strong>Supabase</strong> (database, sign-in and file storage, hosted in the EU, Ireland), <strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> (delivering push notifications), and an email provider for account emails.</li>
-    </ul>
+    <section class="card">
+      <h2>Why we use it</h2>
+      <ul class="list">
+        <li>To run your account and your leagues (the service you asked for).</li>
+        <li>To send the notifications you allow (match days, results to confirm, rivalries). You can mute each type in Settings or turn them off on your phone.</li>
+        <li>To keep the service secure and prevent abuse (for example limiting repeated invite-code guesses).</li>
+      </ul>
+    </section>
 
-    <h2>How long we keep it</h2>
-    <p>We keep your data while your account exists. When you delete your account we delete your sign-in, email, profile photo, push tokens and notifications. Match results you took part in stay in your friends' tables, shown as "Deleted player", so their standings remain correct. Security logs are kept for a limited period.</p>
+    <section class="card card--cyan">
+      <h2>Who can see it</h2>
+      <ul class="list">
+        <li>Members of a tournament see each other's username, display name, photo and that tournament's fixtures, results, standings, bills and stakes.</li>
+        <li>Tournament admins also see availability replies and disputes for their tournament.</li>
+        <li>Service providers that process data for us: <strong>Supabase</strong> (database, sign-in and file storage, hosted in the EU, Ireland), <strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> (delivering push notifications), and an email provider for account emails.</li>
+      </ul>
+    </section>
 
-    <h2>Your choices and rights</h2>
-    <ul>
-      <li>Edit your profile at any time in the app.</li>
-      <li>Delete your account in the app (Profile → Settings → Delete account) or via the <a href="account-deletion">account deletion page</a>.</li>
-      <li>Ask for a copy of your data, or for corrections, by emailing <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>. You may also complain to the Office of the Data Protection Commissioner (Kenya).</li>
-    </ul>
+    <section class="card">
+      <h2>How long we keep it</h2>
+      <p>We keep your data while your account exists. When you delete your account we delete your sign-in, email, profile photo, push tokens and notifications. Match results you took part in stay in your friends' tables, shown as "Deleted player", so their standings remain correct. Security logs are kept for a limited period.</p>
 
-    <h2>Children</h2>
-    <p>SOKA is for people aged 13 and over. Friendly stakes are only available to users who confirm they are 18 or older.</p>
+      <h2>Your choices and rights</h2>
+      <ul class="list">
+        <li>Edit your profile at any time in the app.</li>
+        <li>Delete your account in the app (Profile → Settings → Delete account) or via the <a href="account-deletion.html">account deletion page</a>.</li>
+        <li>Ask for a copy of your data, or for corrections, by emailing <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a>. You may also complain to the Office of the Data Protection Commissioner (Kenya).</li>
+      </ul>
+    </section>
 
-    <h2>Security</h2>
-    <p>Data is encrypted in transit (HTTPS). Access is limited by database rules so players only see their own tournaments.</p>
+    <section class="card card--cyan">
+      <h2>Children</h2>
+      <p>SOKA is for people aged 13 and over. Friendly stakes are only available to users who confirm they are 18 or older.</p>
 
-    <h2>Changes</h2>
-    <p>If we change this policy we will update the date above and, for important changes, tell you in the app.</p>
-    <p class="muted" style="margin-top:40px"><a href="./">SOKA</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a> · <a href="account-deletion">Delete account</a> · <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
+      <h2>Security</h2>
+      <p>Data is encrypted in transit (HTTPS). Access is limited by database rules so players only see their own tournaments.</p>
+    </section>
+
+    <section class="card">
+      <h2>Changes</h2>
+      <p>If we change this policy we will update the date above and, for important changes, tell you in the app.</p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">SOKA</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="account-deletion.html">Delete account</a></li>
+          <li><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

@@ -5,55 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SOKA — run your FC league</title>
   <meta name="description" content="SOKA helps friends who play EA SPORTS FC run their own tournaments.">
-  <style>
-    :root {
-      --bg: #F4F6FA; --surface: #FFFFFF; --text: #151A2D; --muted: #4A5372;
-      --border: #E2E6EF; --accent: #123BCE; --on-accent: #FFFFFF;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0B1026; --surface: #171D32; --text: #F4F6FA; --muted: #AAB4D0;
-        --border: #293149; --accent: #E6FF00; --on-accent: #0B1026;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin: 32px 0 8px; }
-    p, li { color: var(--text); }
-    .lead { color: var(--muted); margin: 0 0 24px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-    ol, ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px;
-      border-radius: 12px; background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-    }
-    .button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    a { color: inherit; }
-    .muted { color: var(--muted); font-size: 14px; }
-    code { font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#070712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Teko:wght@600;700&display=swap">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1>SOKA</h1>
-    <p class="lead">Run your FC league. A tournament app for friends who play EA SPORTS FC: match days, availability, fair fixtures, confirmed results, live tables, rivalries and XP.</p>
-    <div class="card">
-      <ul>
-        <li><a href="privacy">Privacy policy</a></li>
-        <li><a href="terms">Terms of use</a></li>
-        <li><a href="account-deletion">Delete your account</a></li>
-        <li>Support: <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="wrap wrap--wide">
+      <a class="wordmark" href="index.html" aria-label="SOKA home">SOKA</a>
+      <span class="pill">FC League Manager</span>
     </div>
+  </header>
+
+  <main id="main" class="wrap wrap--wide">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Run your FC league</h1>
+      <p class="lead">A tournament app for friends who play EA SPORTS FC: match days, availability, fair fixtures, confirmed results, live tables, rivalries and XP.</p>
+    </section>
+
+    <section aria-label="Features" class="features">
+      <article class="card">
+        <span class="feature-num" aria-hidden="true">01</span>
+        <h2>Match Days</h2>
+        <p>Set the date and see who is in. Everyone answers once, so you know who is playing before you start.</p>
+      </article>
+      <article class="card card--cyan">
+        <span class="feature-num" aria-hidden="true">02</span>
+        <h2>Live Tables</h2>
+        <p>Standings update as soon as a result is confirmed by both players, or decided by an admin.</p>
+      </article>
+      <article class="card">
+        <span class="feature-num" aria-hidden="true">03</span>
+        <h2>Rivalries &amp; XP</h2>
+        <p>Head-to-head records, badges and XP that build up with every confirmed match.</p>
+      </article>
+      <article class="card card--cyan">
+        <span class="feature-num" aria-hidden="true">04</span>
+        <h2>Fair Fixtures</h2>
+        <p>Round robin, knockout or groups, drawn fairly from the players who are available.</p>
+      </article>
+    </section>
+
+    <section class="card card--cyan" aria-labelledby="links-title">
+      <h2 id="links-title">Info &amp; support</h2>
+      <ul class="link-pills">
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="account-deletion.html">Delete your account</a></li>
+        <li><a href="mailto:silvestermutinda74@gmail.com">Support: silvestermutinda74@gmail.com</a></li>
+      </ul>
+    </section>
+
     <p class="muted">SOKA is an independent app. It is not affiliated with or endorsed by Electronic Arts.</p>
-    <p class="muted" style="margin-top:40px"><a href="./">SOKA</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a> · <a href="account-deletion">Delete account</a> · <a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></p>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap--wide">
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">SOKA</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="account-deletion.html">Delete account</a></li>
+          <li><a href="mailto:silvestermutinda74@gmail.com">silvestermutinda74@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
